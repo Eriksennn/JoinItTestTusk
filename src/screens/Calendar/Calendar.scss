@@ -115,7 +115,9 @@
     margin-right: 9px;
     margin-top: 6px;
   }
-
+  .fc-scroller {
+    overflow-y: hidden !important;
+  }
   .fc-daygrid-event {
     border: none;
     width: 100%;

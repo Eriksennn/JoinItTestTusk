@@ -2,7 +2,7 @@ import FullCalendar from "@fullcalendar/react";
 import dayGridPlugin from "@fullcalendar/daygrid";
 import timeGridPlugin from "@fullcalendar/timegrid";
 import interactionPlugin from "@fullcalendar/interaction";
-import { Modal, Button, Form } from "react-bootstrap"; // Bootstrap for modal and form
+import { Modal, Button, Form } from "react-bootstrap";
 import { useData } from "./useData";
 import style from "./Calendar.module.scss";
 import { PageLayout } from "@/components";
@@ -26,7 +26,7 @@ export const Calendar = () => {
     <PageLayout>
       <div className={style.root}>
         <h1>Calendar</h1>
-        <div className={style.calendar}>
+        <div className={`${style.calendar} calendar`}>
           <FullCalendar
             dayCellClassNames={style.cell}
             dayHeaderClassNames={style.header}
