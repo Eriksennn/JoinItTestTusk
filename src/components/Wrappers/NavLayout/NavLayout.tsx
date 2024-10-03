@@ -11,7 +11,7 @@ export const NavLayout: FC<NavLayoutProps> = ({ children }) => {
     <div className={styles.wrap}>
       <div className={styles.nav}>
         <div className={styles.wrapNavBar}>
-          <NavBar isMinimized={false} isHidden={false} />
+          <NavBar />
         </div>
       </div>
       <div className={styles.content}>{children}</div>

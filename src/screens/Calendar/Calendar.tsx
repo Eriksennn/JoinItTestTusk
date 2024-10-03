@@ -25,8 +25,11 @@ export const Calendar = () => {
   return (
     <PageLayout>
       <div className={style.root}>
+        <h1>Calendar</h1>
         <div className={style.calendar}>
           <FullCalendar
+            dayCellClassNames={style.cell}
+            dayHeaderClassNames={style.header}
             plugins={[dayGridPlugin, timeGridPlugin, interactionPlugin]}
             initialView='dayGridMonth'
             headerToolbar={calendarHeader}
@@ -42,9 +45,9 @@ export const Calendar = () => {
       <Modal
         show={modalOpen}
         onHide={() => setModalOpen(false)}
-        className={style.customModal} // Add the custom class for the modal
+        className={style.customModal}
       >
-        <Modal.Header closeButton>
+        <Modal.Header>
           <Modal.Title>{isEditing ? "Edit Event" : "Add Event"}</Modal.Title>
         </Modal.Header>
         <Modal.Body>

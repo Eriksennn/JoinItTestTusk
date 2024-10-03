@@ -14,21 +14,6 @@ a {
   text-decoration: none;
   color: inherit;
 }
-.new {
-  color: #94b651;
-}
-.processing {
-  color: #94b651;
-}
-.pending_payment {
-  color: #febb5e;
-}
-.payed {
-  color: #94b651;
-}
-.error {
-  color: #fa917d;
-}
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;

@@ -1,14 +1,8 @@
-import { FC } from "react";
 import style from "./NavBar.module.scss";
 import { NavLink } from "react-router-dom";
 import { Path } from "@/navigation/Path";
 
-interface NavBarProps {
-  isMinimized: boolean;
-  isHidden: boolean;
-}
-
-export const NavBar: FC<NavBarProps> = () => {
+export const NavBar = () => {
   return (
     <nav className={style.nav}>
       <ul>
