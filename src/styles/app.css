@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: "Heebo", system-ui;
+}
+
+html,
+body,
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.new {
+  color: #94b651;
+}
+.processing {
+  color: #94b651;
+}
+.pending_payment {
+  color: #febb5e;
+}
+.payed {
+  color: #94b651;
+}
+.error {
+  color: #fa917d;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+.fc-toolbar-title {
+  text-align: center;
+}
+.__react_modal_image__medium_img {
+  width: max-content !important;
+  height: max-content !important;
+  object-fit: cover !important;
+}
+.ReactModalPortal {
+  /* position: relative; */
+  z-index: 10000;
+}
+.ReactModal__Content--after-open {
+  margin: 0 auto;
+  width: 600px;
+  height: max-content;
+  border-radius: 10px !important;
+}
+.ReactModal__Overlay {
+  background-color: rgba(131, 131, 131, 0.75) !important;
+}

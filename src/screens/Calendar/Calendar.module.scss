@@ -1,0 +1,48 @@
+.root {
+  margin-bottom: 10px;
+  width: calc(100vw - 271px);
+  .calendar {
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    font-size: 15px;
+    border-radius: 0;
+
+    .cell {
+      background: #fff;
+    }
+
+    .header {
+      background: #818181;
+      height: 44px;
+      color: #fff;
+      &:not(:last-child) {
+        border-right: 1px solid #afafaf;
+      }
+    }
+  }
+}
+
+.fc-theme-standard .fc-scrollgrid {
+  border: none !important;
+}
+
+.fc-daygrid {
+  height: 100%;
+}
+.fc-header-toolbar {
+  background: #5c5c5c;
+  height: 70px;
+  padding: 10px;
+  box-shadow: -3px -12px 28px 0px rgba(0, 0, 0, 0.1);
+}
+
+.customModal {
+  position: fixed;
+  top: 50%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  z-index: 1050;
+  background-color: #5c5c5c;
+}
